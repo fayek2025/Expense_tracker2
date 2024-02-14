@@ -39,9 +39,9 @@ class SignUpForm(UserCreationForm):
 class AddRecordForm(forms.ModelForm):
 	
  
-	Name = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"First Name", "class":"form-control"}), label="")
-	Expenses = forms.IntegerField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"First Name", "class":"form-control"}), label="")
-	Created_at = forms.DateTimeField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"First Name", "class":"form-control"}), label="")
+	Name = forms.CharField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Name", "class":"form-control"}), label="")
+	Expenses = forms.IntegerField(required=True, widget=forms.widgets.TextInput(attrs={"placeholder":"Cost", "class":"form-control"}), label="")
+	
 
 	class Meta:
 		model = record

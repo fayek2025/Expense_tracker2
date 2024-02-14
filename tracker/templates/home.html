@@ -6,7 +6,37 @@
 
     {% if user.is_authenticated %}
 
-    <h1> Hello World! </h1>
+    <h1> Expense Tracker </h1>
+
+    {% if records %}
+    
+    {% for record in records %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Cost</th>
+          <th scope="col">TimeStamp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href = "{% url "expense_record" record.id %}"> {{record.id}} </a></td>
+          <td>{{record.Name}}</td>
+          <td>{{record.Expenses}}</td>
+          <td>  {{record.Created_at}}  </td>
+        </tr>
+        
+    </table>
+    
+
+  {% endfor %}
+    
+    
+    {% endif %}
+
+    
 
     {% else %}
 <h1> Login </h1>

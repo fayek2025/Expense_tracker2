@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block  body %}
+
+<div class = "col-md-6 offset-md-3">
+
+    <form method = "POST">
+        {% csrf_token %}
+        <Strong> Are you sure you wanna delete this record? </Strong>
+    </br>
+        <input type = 'submit' value = 'Yes' class = "btn btn-danger">
+        
+        <a href = "{% url "home" %}" class = "btn btn-secondary"> Cancel </a> 
+
+
+    </form>
+
+</div>
+
+{% endblock %}
