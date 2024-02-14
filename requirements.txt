@@ -1,7 +1,6 @@
 aiohttp==3.9.3
 aiosignal==1.3.1
 appdirs==1.4.4
-apturl==0.5.2
 asgiref==3.5.0
 async-timeout==4.0.3
 attrs==21.2.0
@@ -9,9 +8,7 @@ backcall==0.2.0
 bcrypt==3.2.0
 beautifulsoup4==4.10.0
 beniget==0.4.1
-binwalk==2.3.3
 blinker==1.4
-Brlapi==0.8.3
 Brotli==1.0.9
 certifi==2020.6.20
 chardet==4.0.0
