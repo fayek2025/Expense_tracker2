@@ -8,9 +8,6 @@
 
     <h1> Expense Tracker </h1>
 
-    {% if records %}
-    
-    {% for record in records %}
     <table class="table">
       <thead>
         <tr>
@@ -21,6 +18,12 @@
         </tr>
       </thead>
       <tbody>
+    {% if records %}
+    
+    
+    {% for record in records %}
+    
+      
         <tr>
           <td><a href = "{% url "expense_record" record.id %}"> {{record.id}} </a></td>
           <td>{{record.Name}}</td>
@@ -28,14 +31,15 @@
           <td>  {{record.Created_at}}  </td>
         </tr>
         
-    </table>
+    
     
 
   {% endfor %}
     
     
     {% endif %}
-
+      </tbody>
+  </table>
     
 
     {% else %}
