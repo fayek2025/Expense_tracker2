@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -74,6 +75,12 @@ WSGI_APPLICATION = 'expense.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+import dj_database_url
+
+# DATABASES = {
+#     	"default": dj_database_url.parse(os.environ.get("postgres://tracker_db_y3dr_user:A9Vx2U73Hbe6KqoYJxdggcOqkPI8ZVZr@dpg-cn6gfqgl5elc73fmto10-a.oregon-postgres.render.com/tracker_db_y3dr"))
+
+# }
 
 DATABASES = {
     'default': {
