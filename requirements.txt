@@ -127,5 +127,4 @@ websockets==9.1
 xdg==5
 xkit==0.0.0
 yarl==1.9.4
-yt-dlp==2022.4.8
 zipp==1.0.0
