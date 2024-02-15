@@ -81,14 +81,14 @@ import dj_database_url
 #     	"default": dj_database_url.parse(os.environ.get("postgres://tracker_db_y3dr_user:A9Vx2U73Hbe6KqoYJxdggcOqkPI8ZVZr@dpg-cn6gfqgl5elc73fmto10-a.oregon-postgres.render.com/tracker_db_y3dr"))
 
 # }
-DATABASES = {}
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
